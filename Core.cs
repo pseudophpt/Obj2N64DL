@@ -3,20 +3,20 @@
  * 
  * fin (pseudophpt)
  * 
- * This file is part of N64Obj2DL.
+ * This file is part of Obj2N64DL.
  *
- * N64Obj2DL is free software: you can redistribute it and/or modify
+ * Obj2N64DL is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * N64Obj2DL is distributed in the hope that it will be useful,
+ * Obj2N64DL is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with N64Obj2DL.  If not, see <http://www.gnu.org/licenses/>.
+ * along with Obj2N64DL.  If not, see <http://www.gnu.org/licenses/>.
  */
  
 using System;
@@ -38,8 +38,6 @@ namespace obj2n64dl
 		{	
 			List<List<List<DLVertex3>>> FormattedDLVertices = new List<List<List<DLVertex3>>> {};
 			
-			
-			Console.WriteLine(this.vtxCacheSize.ToString());
 			int TrisPerRound = this.vtxCacheSize / 3;
 			int RoundsNeeded = (this.triCount / TrisPerRound) + 1;
 
